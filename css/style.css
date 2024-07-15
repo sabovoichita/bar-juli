@@ -5,6 +5,14 @@
 @import url("owl.carousel.css");
 @import url("fancybox.css");
 
+:root {
+  --clr-dark-grey: #adadad;
+  --clr-dark: var(--clr-dark);
+  --clr-blue: #1c75bc;
+  --clr-sec-dark: #000000;
+  --clr-sec-light: #ffff;
+  --clr-orange: #e6c068;
+}
 /* <loader */
 .pace {
   -webkit-pointer-events: none;
@@ -19,7 +27,7 @@
 }
 
 .pace .pace-progress {
-  background: #e6c068;
+  background: var(--clr-orange);
   position: fixed;
   z-index: 2000;
   top: 0;
@@ -34,7 +42,7 @@
   right: 0px;
   width: 100px;
   height: 100%;
-  box-shadow: 0 0 10px #e6c068, 0 0 5px #e6c068;
+  box-shadow: 0 0 10px var(--clr-orange), 0 0 5px var(--clr-orange);
   opacity: 1;
   -webkit-transform: rotate(3deg) translate(0px, -4px);
   -moz-transform: rotate(3deg) translate(0px, -4px);
@@ -53,8 +61,8 @@
   width: 14px;
   height: 14px;
   border: solid 2px transparent;
-  border-top-color: #1c75bc;
-  border-left-color: #1c75bc;
+  border-top-color: var(--clr-blue);
+  border-left-color: var(--clr-blue);
   border-radius: 10px;
   -webkit-animation: pace-spinner 400ms linear infinite;
   -moz-animation: pace-spinner 400ms linear infinite;
@@ -121,7 +129,7 @@ body {
   padding: 0;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  color: #000;
+  color: var(--clr-sec-dark);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   line-height: 20px;
@@ -140,13 +148,13 @@ html {
 
 /* <mini reset */
 ::-moz-selection {
-  background: #000;
-  color: #fff;
+  background: var(--clr-sec-dark);
+  color: var(--clr-sec-light);
   text-shadow: none;
 }
 ::selection {
-  background: #000;
-  color: #fff;
+  background: var(--clr-sec-dark);
+  color: var(--clr-sec-light);
   text-shadow: none;
 }
 
@@ -241,7 +249,7 @@ header.shrink {
   z-index: 101;
   margin-right: auto;
   margin-left: auto;
-  background-color: #fff;
+  background-color: var(--clr-sec-light);
   height: 60px;
   -moz-box-shadow: 0px 4px 3px 0px rgba(120, 120, 120, 0.1);
   -webkit-box-shadow: 0px 4px 3px 0px rgba(120, 120, 120, 0.1);
@@ -295,7 +303,7 @@ nav ul li::before {
   width: 10px;
   padding: 0 17px 0 15px;
   font-size: 14px;
-  color: #adadad;
+  color: var(--clr-dark-grey);
   font-weight: 700;
 }
 nav ul li:first-child::before {
@@ -307,7 +315,7 @@ nav ul li a {
   z-index: 99;
   display: inline-block;
   font-size: 12px;
-  color: #adadad;
+  color: var(--clr-dark-grey);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -319,14 +327,14 @@ nav ul li a::after {
   content: "";
   width: 97%;
   height: 1px;
-  border-bottom: 2px solid #e6c068;
+  border-bottom: 2px solid var(--clr-orange);
   transform: scaleX(0);
   transition: transform 0.25s ease-out;
   /*transform-origin: bottom left;*/
 }
 nav ul li a:hover,
 nav ul li a.selected {
-  color: #fff;
+  color: var(--clr-sec-light);
 }
 nav ul li a:hover::after {
   transform: scaleX(1);
@@ -335,11 +343,11 @@ header.shrink nav ul {
   margin-top: 20px;
 }
 header.shrink nav ul li a {
-  color: #000;
+  color: var(--clr-sec-dark);
 }
 header.shrink nav ul li a:hover,
 header.shrink nav ul li a.selected {
-  color: #000;
+  color: var(--clr-sec-dark);
 }
 
 @media (min-width: 1350px) {
@@ -385,7 +393,7 @@ header.shrink nav ul li a.selected {
   margin-bottom: 40px;
   font-family: "Lora";
   font-size: 50px;
-  color: #fff;
+  color: var(--clr-sec-light);
   font-weight: 400;
   text-transform: uppercase;
   line-height: 50px;
@@ -393,7 +401,7 @@ header.shrink nav ul li a.selected {
 }
 .banner-1 h2 span {
   display: block;
-  color: #adadad;
+  color: var(--clr-dark-grey);
 }
 .banner-1 h2 .first {
   margin-bottom: 20px;
@@ -414,7 +422,7 @@ header.shrink nav ul li a.selected {
   max-width: 540px;
   font-family: "Lora";
   font-size: 14px;
-  color: #adadad;
+  color: var(--clr-dark-grey);
   font-weight: 400;
   font-style: italic;
   line-height: 25px;
@@ -424,7 +432,7 @@ header.shrink nav ul li a.selected {
   display: block;
   font-family: "Open Sans";
   font-size: 10px;
-  color: #adadad;
+  color: var(--clr-dark-grey);
   font-weight: 600;
   letter-spacing: 4px;
   line-height: 10px;
@@ -439,7 +447,7 @@ header.shrink nav ul li a.selected {
 }
 .banner-1 .reservations ul li {
   font-size: 16px;
-  color: #adadad;
+  color: var(--clr-dark-grey);
   font-weight: 600;
 }
 .banner-1 .reservations ul li::before {
@@ -451,10 +459,10 @@ header.shrink nav ul li a.selected {
   padding: 0;
 }
 .banner-1 .reservations ul li a {
-  color: #adadad;
+  color: var(--clr-dark-grey);
 }
 .banner-1 .reservations ul li a:hover {
-  color: #fff;
+  color: var(--clr-sec-light);
 }
 .banner-1 .reservations ul li a span {
   font-size: 13px;
@@ -468,18 +476,18 @@ header.shrink nav ul li a.selected {
   display: inline-block;
   height: 40px;
   padding: 0 25px;
-  border: 1px solid #adadad;
+  border: 1px solid var(--clr-dark-grey);
   border-radius: 20px;
   font-family: "Open Sans";
   font-size: 10px;
-  color: #adadad;
+  color: var(--clr-dark-grey);
   font-weight: 600;
   letter-spacing: 4px;
   line-height: 40px;
   text-transform: uppercase;
 }
 .banner-1 .menu a:hover {
-  color: #fff;
+  color: var(--clr-sec-light);
 }
 .banner-1 .scroll {
   margin: 20px auto 0;
@@ -560,7 +568,7 @@ header.shrink nav ul li a.selected {
 }
 #section-1 .container {
   margin-top: -50px;
-  background-color: #fff;
+  background-color: var(--clr-sec-light);
   box-shadow: 0px 0px 40px 0px rgba(121, 121, 121, 0.2);
 }
 #section-1 .row {
@@ -579,7 +587,7 @@ header.shrink nav ul li a.selected {
   margin-bottom: 25px;
   font-family: "Lora";
   font-size: 19px;
-  color: #e6c068;
+  color: var(--clr-orange);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 6px;
@@ -590,20 +598,20 @@ header.shrink nav ul li a.selected {
   display: block;
   font-family: "Open Sans";
   font-size: 13px;
-  color: #4a5550;
+  color: var(--clr-dark);
   letter-spacing: 10px;
 }
 #section-1 .box p {
   font-family: "Lora";
   font-size: 14px;
-  color: #4a5550;
+  color: var(--clr-dark);
   font-weight: 400;
   font-style: italic;
   line-height: 25px;
 }
 #section-1 .box p a {
-  border-bottom: 2px solid #e6c068;
-  color: #4a5550;
+  border-bottom: 2px solid var(--clr-orange);
+  color: var(--clr-dark);
 }
 #section-1 .box .signature {
   margin-top: 30px;
@@ -655,7 +663,7 @@ header.shrink nav ul li a.selected {
   position: relative;
   z-index: 1;
   margin-top: -50px;
-  background-color: #000;
+  background-color: var(--clr-sec-dark);
   background-image: url("../images/cangrejo-2.png"),
     url("../images/cangrejo-2.png");
   background-position: calc(100% + 295px) 150px, calc(0% - 315px) 450px;
@@ -681,24 +689,24 @@ header.shrink nav ul li a.selected {
   display: inline-block;
   height: 40px;
   padding: 0 25px;
-  border: 1px solid #adadad;
+  border: 1px solid var(--clr-dark-grey);
   border-radius: 20px;
   font-family: "Open Sans";
   font-size: 10px;
-  color: #adadad;
+  color: var(--clr-dark-grey);
   font-weight: 600;
   letter-spacing: 4px;
   line-height: 40px;
   text-transform: uppercase;
 }
 #section-2 .header a:hover {
-  color: #fff;
+  color: var(--clr-sec-light);
 }
 #section-2 .header h3 {
   margin-top: 40px;
   font-family: "Lora";
   font-size: 35px;
-  color: #fff;
+  color: var(--clr-sec-light);
   font-style: italic;
   font-weight: 700;
   line-height: 30px;
@@ -722,7 +730,7 @@ header.shrink nav ul li a.selected {
   margin-top: 100px;
   font-family: "Lora";
   font-size: 30px;
-  color: #fff;
+  color: var(--clr-sec-light);
   font-style: italic;
   font-weight: 400;
   line-height: 30px;
@@ -739,7 +747,7 @@ header.shrink nav ul li a.selected {
 }
 #section-2 #menu .header h3 {
   display: inline-block;
-  background-color: #000;
+  background-color: var(--clr-sec-dark);
   height: 30px;
   padding: 0 30px;
 }
@@ -748,7 +756,7 @@ header.shrink nav ul li a.selected {
   max-width: 500px;
   font-family: "Lora";
   font-size: 15px;
-  color: #adadad;
+  color: var(--clr-dark-grey);
   text-align: center;
   line-height: 25px;
   font-style: italic;
@@ -773,11 +781,11 @@ header.shrink nav ul li a.selected {
   font-size: 15px;
   font-weight: 700;
   font-style: italic;
-  color: #adadad;
+  color: var(--clr-dark-grey);
   white-space: nowrap;
 }
 #section-2 .owl-carousel.menu .owl-dots .owl-dot.active {
-  color: #fff;
+  color: var(--clr-sec-light);
 }
 #section-2 .menu {
   border-radius: 2px;
@@ -786,7 +794,7 @@ header.shrink nav ul li a.selected {
   margin-top: 110px;
   font-family: "Lora";
   font-size: 30px;
-  color: #fff;
+  color: var(--clr-sec-light);
   font-weight: 700;
   font-style: italic;
   text-align: center;
@@ -795,7 +803,7 @@ header.shrink nav ul li a.selected {
   margin: 50px auto -50px;
   font-family: "Lora";
   font-size: 17px;
-  color: #fff;
+  color: var(--clr-sec-light);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -808,7 +816,7 @@ header.shrink nav ul li a.selected {
   margin: 20px auto 0;
   display: block;
   content: "";
-  background-color: #adadad;
+  background-color: var(--clr-dark-grey);
   width: 100px;
   height: 2px;
   opacity: 0.6;
@@ -827,14 +835,14 @@ header.shrink nav ul li a.selected {
   width: 100%;
   font-family: "Lora";
   font-size: 15px;
-  color: #fff;
+  color: var(--clr-sec-light);
   font-style: italic;
 }
 #section-2 .menu ul li.special {
   margin-top: -40px;
   margin-bottom: 40px;
   display: inherit;
-  color: #adadad;
+  color: var(--clr-dark-grey);
   text-align: center;
 }
 #section-2 .menu ul li.hidden {
@@ -850,7 +858,7 @@ header.shrink nav ul li a.selected {
   font-style: normal;
 }
 #section-2 .menu ul li .name span {
-  color: #adadad;
+  color: var(--clr-dark-grey);
 }
 #section-2 .menu ul li .space {
   flex-grow: 1;
@@ -863,7 +871,7 @@ header.shrink nav ul li a.selected {
   white-space: nowrap;
 }
 #section-2 .menu ul li .special {
-  border-top: 1px solid #fff;
+  border-top: 1px solid var(--clr-sec-light);
 }
 
 #section-2 .reservations {
@@ -884,7 +892,7 @@ header.shrink nav ul li a.selected {
   display: block;
   font-family: "Open Sans";
   font-size: 10px;
-  color: #adadad;
+  color: var(--clr-dark-grey);
   font-weight: 600;
   letter-spacing: 4px;
   line-height: 10px;
@@ -899,7 +907,7 @@ header.shrink nav ul li a.selected {
 }
 #section-2 .reservations ul li {
   font-size: 16px;
-  color: #adadad;
+  color: var(--clr-dark-grey);
   font-weight: 600;
 }
 #section-2 .reservations ul li::before {
@@ -911,10 +919,10 @@ header.shrink nav ul li a.selected {
   padding: 0;
 }
 #section-2 .reservations ul li a {
-  color: #adadad;
+  color: var(--clr-dark-grey);
 }
 #section-2 .reservations ul li a:hover {
-  color: #fff;
+  color: var(--clr-sec-light);
 }
 #section-2 .reservations ul li a span {
   font-size: 13px;
@@ -1032,7 +1040,7 @@ header.shrink nav ul li a.selected {
 
 /* <footer */
 #footer {
-  background-color: #000;
+  background-color: var(--clr-sec-dark);
   padding: 60px 0 30px;
   text-align: center;
 }
@@ -1045,7 +1053,7 @@ header.shrink nav ul li a.selected {
   margin: 50px 0 15px;
   font-family: "Lora";
   font-size: 16px;
-  color: #fff;
+  color: var(--clr-sec-light);
   font-weight: 400;
   line-height: 25px;
   text-transform: uppercase;
@@ -1061,15 +1069,15 @@ header.shrink nav ul li a.selected {
 #footer ul li {
   font-family: "Lora";
   font-size: 14px;
-  color: #adadad;
+  color: var(--clr-dark-grey);
   font-weight: 400;
   line-height: 20px;
 }
 #footer ul li a {
-  color: #adadad;
+  color: var(--clr-dark-grey);
 }
 #footer ul li a:hover {
-  color: #fff;
+  color: var(--clr-sec-light);
 }
 #footer ul li::before {
   content: "·";
@@ -1081,13 +1089,13 @@ header.shrink nav ul li a.selected {
 }
 #footer ul li a span {
   font-size: 13px;
-  color: #adadad;
+  color: var(--clr-dark-grey);
   font-weight: 400;
 }
 #footer .info {
   margin-top: 40px;
   font-size: 9px;
-  color: #adadad;
+  color: var(--clr-dark-grey);
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -1102,20 +1110,20 @@ header.shrink nav ul li a.selected {
 #footer ul.nav li {
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
-  color: #adadad;
+  color: var(--clr-dark-grey);
   font-weight: 400;
   line-height: 20px;
 }
 #footer ul.nav li a {
-  color: #adadad;
+  color: var(--clr-dark-grey);
 }
 #footer ul.nav li a:hover {
-  color: #fff;
+  color: var(--clr-sec-light);
 }
 #footer .copyright {
   margin-top: 40px;
   font-size: 9px;
-  color: #adadad;
+  color: var(--clr-dark-grey);
   font-weight: 600;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -1123,13 +1131,13 @@ header.shrink nav ul li a.selected {
 #footer .author {
   margin-top: 30px;
   font-size: 13px;
-  color: #adadad;
+  color: var(--clr-dark-grey);
 }
 #footer .author a {
-  color: #adadad;
+  color: var(--clr-dark-grey);
 }
 #footer .author a:hover {
-  color: #fff;
+  color: var(--clr-sec-light);
 }
 
 @media (min-width: 1350px) {
@@ -1173,8 +1181,8 @@ header.shrink nav ul li a.selected {
   max-width: 900px;
 }
 .modal.info .modal-content {
-  background-color: #fff;
-  /*background: #fff url('../images/cangrejo-1.png') 50% 50% no-repeat;*/
+  background-color: var(--clr-sec-light);
+  /*background: var(--clr-sec-light) url('../images/cangrejo-1.png') 50% 50% no-repeat;*/
   background-size: 70%;
   border-radius: 2px;
 }
@@ -1194,7 +1202,7 @@ header.shrink nav ul li a.selected {
   -webkit-text-shadow: none;
   text-shadow: none;
   font-size: 20px;
-  color: #000;
+  color: var(--clr-sec-dark);
   opacity: 1;
 }
 .modal.info .modal-body {
@@ -1207,7 +1215,7 @@ header.shrink nav ul li a.selected {
   width: 100%;
   font-family: "Lora", sans-serif;
   font-size: 32px;
-  color: #000;
+  color: var(--clr-sec-dark);
   font-weight: 700;
   line-height: 40px;
   text-transform: uppercase;
@@ -1223,10 +1231,10 @@ header.shrink nav ul li a.selected {
   text-align: center;
 }
 .modal.info .modal-body p a {
-  color: #000;
+  color: var(--clr-sec-dark);
 }
 .modal.info .modal-body p a:hover {
-  color: #e6c068;
+  color: var(--clr-orange);
 }
 
 .modal.info.special .modal-body {
@@ -1241,7 +1249,7 @@ header.shrink nav ul li a.selected {
   width: 100%;
   font-family: "Lora", sans-serif;
   font-size: 30px;
-  color: #e6c068;
+  color: var(--clr-orange);
   font-weight: 700;
   line-height: 30px;
 }
@@ -1260,7 +1268,7 @@ header.shrink nav ul li a.selected {
   margin-top: 10px;
   display: block;
   content: "";
-  background-color: #e6c068;
+  background-color: var(--clr-orange);
   width: 80px;
   height: 3px;
 }
@@ -1280,12 +1288,12 @@ header.shrink nav ul li a.selected {
   text-align: justify;
 }
 .modal.info.special .modal-body a {
-  border-bottom: 1px solid #e6c068;
-  color: #000;
+  border-bottom: 1px solid var(--clr-orange);
+  color: var(--clr-sec-dark);
 }
 .modal.info.special .modal-body a:hover {
-  border-bottom-color: #000;
-  color: #e6c068;
+  border-bottom-color: var(--clr-sec-dark);
+  color: var(--clr-orange);
 }
 
 @media (max-width: 991.98px) {
@@ -1321,7 +1329,7 @@ body .freeprivacypolicy-com---nb .cc-nb-main-container {
   padding: 30px 40px;
 }
 body .freeprivacypolicy-com---palette-dark.freeprivacypolicy-com---nb {
-  background-color: #e6c068;
+  background-color: var(--clr-orange);
 }
 body .freeprivacypolicy-com---palette-dark .cc-nb-title {
   font-size: 16px;
@@ -1347,11 +1355,11 @@ body .freeprivacypolicy-com---palette-dark .cc-cp-foot-byline {
   visibility: hidden;
 }
 body .freeprivacypolicy-com---palette-dark .cc-nb-okagree {
-  background-color: #000;
+  background-color: var(--clr-sec-dark);
   border-radius: 30px;
   padding-right: 30px;
   padding-left: 30px;
-  color: #fff;
+  color: var(--clr-sec-light);
   font-weight: 600;
 }
 body .freeprivacypolicy-com---palette-dark .cc-nb-changep {
