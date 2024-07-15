@@ -19,7 +19,7 @@
 }
 
 .pace .pace-progress {
-  background: #c59e75;
+  background: #e6c068;
   position: fixed;
   z-index: 2000;
   top: 0;
@@ -34,7 +34,7 @@
   right: 0px;
   width: 100px;
   height: 100%;
-  box-shadow: 0 0 10px #c59e75, 0 0 5px #c59e75;
+  box-shadow: 0 0 10px #e6c068, 0 0 5px #e6c068;
   opacity: 1;
   -webkit-transform: rotate(3deg) translate(0px, -4px);
   -moz-transform: rotate(3deg) translate(0px, -4px);
@@ -227,7 +227,7 @@ header h1 {
 }
 header h1 a {
   display: block;
-  background: url("../images/1.svg") 0 0 no-repeat;
+  background: url("../images/4.svg") 0 0 no-repeat;
   width: 120px;
   height: 120px;
   text-indent: -9999px;
@@ -258,7 +258,7 @@ header.shrink h1 {
   height: 50px;
 }
 header.shrink h1 a {
-  background: url("../images/2.svg") 0 0 no-repeat;
+  background: url("../images/4.svg") 0 0 no-repeat;
   width: 50px;
   height: 50px;
 }
@@ -319,7 +319,7 @@ nav ul li a::after {
   content: "";
   width: 97%;
   height: 1px;
-  border-bottom: 2px solid #c59e75;
+  border-bottom: 2px solid #e6c068;
   transform: scaleX(0);
   transition: transform 0.25s ease-out;
   /*transform-origin: bottom left;*/
@@ -579,7 +579,7 @@ header.shrink nav ul li a.selected {
   margin-bottom: 25px;
   font-family: "Lora";
   font-size: 19px;
-  color: #c59e75;
+  color: #e6c068;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 6px;
@@ -602,7 +602,7 @@ header.shrink nav ul li a.selected {
   line-height: 25px;
 }
 #section-1 .box p a {
-  border-bottom: 2px solid #c59e75;
+  border-bottom: 2px solid #e6c068;
   color: #4a5550;
 }
 #section-1 .box .signature {
@@ -612,11 +612,11 @@ header.shrink nav ul li a.selected {
   height: 80px;
 }
 #section-1 .img-1 {
-  background: url("../images/juli1.webp") 50% 50% no-repeat;
+  background: url("../images/bar-juli-10.webp") 50% 50% no-repeat;
   background-size: cover;
 }
 #section-1 .img-2 {
-  background: url("../images/Juli10.webp") 50% 50% no-repeat;
+  background: url("../images/bar-juli-1.webp") 50% 50% no-repeat;
   background-size: cover;
 }
 
@@ -1226,7 +1226,7 @@ header.shrink nav ul li a.selected {
   color: #000;
 }
 .modal.info .modal-body p a:hover {
-  color: #c59e75;
+  color: #e6c068;
 }
 
 .modal.info.special .modal-body {
@@ -1241,7 +1241,7 @@ header.shrink nav ul li a.selected {
   width: 100%;
   font-family: "Lora", sans-serif;
   font-size: 30px;
-  color: #c59e75;
+  color: #e6c068;
   font-weight: 700;
   line-height: 30px;
 }
@@ -1260,7 +1260,7 @@ header.shrink nav ul li a.selected {
   margin-top: 10px;
   display: block;
   content: "";
-  background-color: #c59e75;
+  background-color: #e6c068;
   width: 80px;
   height: 3px;
 }
@@ -1280,12 +1280,12 @@ header.shrink nav ul li a.selected {
   text-align: justify;
 }
 .modal.info.special .modal-body a {
-  border-bottom: 1px solid #c59e75;
+  border-bottom: 1px solid #e6c068;
   color: #000;
 }
 .modal.info.special .modal-body a:hover {
   border-bottom-color: #000;
-  color: #c59e75;
+  color: #e6c068;
 }
 
 @media (max-width: 991.98px) {
@@ -1321,7 +1321,7 @@ body .freeprivacypolicy-com---nb .cc-nb-main-container {
   padding: 30px 40px;
 }
 body .freeprivacypolicy-com---palette-dark.freeprivacypolicy-com---nb {
-  background-color: #c59e75;
+  background-color: #e6c068;
 }
 body .freeprivacypolicy-com---palette-dark .cc-nb-title {
   font-size: 16px;
